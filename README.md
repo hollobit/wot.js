@@ -1,4 +1,32 @@
 wot.js
 ======
 
-Web of Things Application Framework
+This project is "wot.js" Web of Things Application Framework
+
+## Similar frameworks base on node.js 
+* [JavaScript and the Internet of Things](http://postscapes.com/javascript-and-the-internet-of-things)
+* [JavaScript framework for robotics, physical computing, and the Internet of Things using Node.js](http://cylonjs.com/)
+* [The ThingBox Project](http://thethingbox.io/) 
+* [Octoblu](http://developer.octoblu.com/) 
+* [Intel® XDK IoT Edition ](https://software.intel.com/en-us/node/531745)
+* [Tessel](https://tessel.io/) 
+* [Node-RED](http://nodered.org/)
+* [NodeBots](http://nodebots.io/)
+* [socket.io](http://socket.io/) 
+* [Node-isassemble Johnny-Five](https://github.com/rwaldron/johnny-five) 
+* [Resin.io](https://resin.io/) 
+
+## Useful links
+* [use cases and requirements](http://hollobit.github.io/wot-req/)
+* [The Web of Things CG homepage](http://www.w3.org/community/wot/)
+* [The Web of Things CG Wiki](http://www.w3.org/community/wot/wiki/Main_Page)
+* [The Web of Things IG charter (draft)](http://www.w3.org/2014/09/wot-ig-charter.html)
+* [Report of WoT Workshop](http://www.w3.org/2014/02/wot/report.html)
+* [The Web of Things CG mailing-list](http://lists.w3.org/Archives/Public/public-web-of-things/)
+* [curated list of delightful Node.js packages and resources](https://github.com/sindresorhus/awesome-nodejs)
+
+## Goals for v1
+
+For the first version, we aim to standardize the following: 
+
+[TBD]
