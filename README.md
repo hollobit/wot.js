@@ -23,6 +23,8 @@ This project is "wot.js" Web of Things Application Framework
 * [The Web of Things IG charter (draft)](http://www.w3.org/2014/09/wot-ig-charter.html)
 * [Report of WoT Workshop](http://www.w3.org/2014/02/wot/report.html)
 * [The Web of Things CG mailing-list](http://lists.w3.org/Archives/Public/public-web-of-things/)
+* [Second Screen WG charter](http://www.w3.org/2014/secondscreen/charter.html) 
+* [Second Screen CG github](https://github.com/webscreens/) 
 * [curated list of delightful Node.js packages and resources](https://github.com/sindresorhus/awesome-nodejs)
 
 ## Goals for v1
