@@ -17,6 +17,10 @@ This project is "wot.js" Web of Things Application Framework
 * [Resin.io](https://resin.io/) 
 
 ## Useful links
+* [The Web of Things Initiative](http://www.w3.org/WoT/)
+* [The Web of Things IG homepage](http://www.w3.org/WoT/IG/)
+* [The Web of Things IG Wiki](http://www.w3.org/WoT/IG/wiki/Main_Page) 
+* [The Web of Things IG mailing list](https://lists.w3.org/Archives/Public/public-wot-ig/)
 * [use cases and requirements](http://hollobit.github.io/wot-req/)
 * [The Web of Things CG homepage](http://www.w3.org/community/wot/)
 * [The Web of Things CG Wiki](http://www.w3.org/community/wot/wiki/Main_Page)
@@ -26,6 +30,12 @@ This project is "wot.js" Web of Things Application Framework
 * [Second Screen WG charter](http://www.w3.org/2014/secondscreen/charter.html) 
 * [Second Screen CG github](https://github.com/webscreens/) 
 * [curated list of delightful Node.js packages and resources](https://github.com/sindresorhus/awesome-nodejs)
+
+## IoT related links
+* [IoT device catalogue](http://iotlist.co/) 
+* [IOTDB: The Internet of Things Database](https://iotdb.org/)
+* [Postscapes: Tracking the Internet of Things](http://postscapes.com/)
+* [OIC Iotivity project](https://www.iotivity.org/) 
 
 ## Goals for v1
 
