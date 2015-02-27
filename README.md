@@ -37,6 +37,7 @@ This project is "wot.js" Web of Things Application Framework
 * [Postscapes: Tracking the Internet of Things](http://postscapes.com/)
 * [OIC Iotivity project](https://www.iotivity.org/) 
 * [Top 50 IoT application scenarios](http://www.libelium.com/top_50_iot_sensor_applications_ranking/)
+* [Littlebits](http://littlebits.cc/kits/smart-home-kit)
 
 ## Goals for v1
 
