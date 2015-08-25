@@ -1,0 +1,23 @@
+{
+    "name": "WoT.js",
+    "description": "Web of Things based on node.js",
+    "version": "0.0.1",
+    "author": {
+        "name": "nagesoft",
+        "email": "jhson@nagesoft.com"
+    },
+    "scripts": {
+        "test": "mocha --reporter spec --bail"
+    },
+    "engine": {
+        "node": "0.12.x"
+    },
+    "os": ["linux"],
+    "cpu": ["arm"],
+    "dependencies": {
+        "sensorjs": "git+https://github.com/nage-son/sensorjs.git",
+        "log4js": ">=0.6.8",
+        "noble": ">=1.1.0",
+        "lodash": ">=3.10.1"
+    }
+}
