@@ -6,6 +6,10 @@
         "name": "ETRI",
         "email": "hollobit@etri.re.kr"
     },
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:nage-son/etri-wotjs-enhanced.git"
+    },
     "scripts": {
         "test": "mocha --reporter spec --bail"
     },
