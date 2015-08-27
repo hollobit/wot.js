@@ -3,8 +3,8 @@
     "description": "Web of Things based on node.js",
     "version": "0.0.1",
     "author": {
-        "name": "nagesoft",
-        "email": "jhson@nagesoft.com"
+        "name": "ETRI",
+        "email": "hollobit@etri.re.kr"
     },
     "scripts": {
         "test": "mocha --reporter spec --bail"
