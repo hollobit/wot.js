@@ -1,6 +1,6 @@
 'use strict';
 
-var connect = require('sensorjs');,
+var connect = require('sensorjs');
 var sensorDriver = connect.sensor;
 var log4js = require('log4js');
 var _ = require('lodash');
@@ -14,6 +14,15 @@ var app,
 var RECOMMENDED_INTERVAL = 60 * 1000,
         MAX_VALUES_LENGTH = 100;
 
+/**
+ * Initialize WoT.js
+ * 
+ * @param  {http.Server}   appServer http.Server instance.
+ * @param  {[type]}   options   [description]
+ * @param  {Function} cb        [description]
+ * @return {[type]}             [description]
+ * @see {@link https://nodejs.org/api/http.html#http_http_createserver_requestlistener}
+ */
 function init(appServer, options, cb) {
     app = connect().
     use(function (data, next) {
@@ -54,6 +63,13 @@ function init(appServer, options, cb) {
     return cb && cb();
 }
 
+/**
+ * Create sensor using url
+ * 
+ * @param  {String}   sensorUrl sensorjs:///
+ * @param  {Function} cb        [description]
+ * @return {[type]}             [description]
+ */
 function createSensor(sensorUrl, cb) {
     var sensor,
         sensorId,
@@ -82,7 +98,7 @@ function createSensor(sensorUrl, cb) {
 
         log.info('[wot/createSensor] sensor is created', sensorId, sensors);
 
-        return cb && cb(null, sensor)
+        return cb && cb(null, sensor);
     } catch (e) {
         log.error('[wot/createSensor] sensor is not created', sensorUrl, e);
         return cb && cb(e);
@@ -111,3 +127,4 @@ exports.sensors = sensors;
 exports.init = init;
 exports.createSensor = createSensor;
 exports.discoverSensors = discoverSensors;
+exports.setActurator = setActurator;
