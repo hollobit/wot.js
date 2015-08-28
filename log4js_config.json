@@ -1,0 +1,11 @@
+{
+    "levels": {
+        "WoT": "INFO"
+    },
+    "replaceConsole": true,
+    "appenders": [
+        {
+            "type": "console"
+        }
+    ]
+}
