@@ -2,7 +2,7 @@
 
 var connect = require('sensorjs'),
     sensorDriver = connect.sensor,
-    logger = require('log4js').getLogger('Sensor'),
+    logger = require('log4js').getLogger('WoT'),
     _ = require('lodash');
 
 var app,
