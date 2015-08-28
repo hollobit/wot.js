@@ -20,7 +20,7 @@
     "cpu": ["arm"],
     "dependencies": {
         "sensorjs": "git+https://github.com/nage-son/sensorjs.git",
-        "log4js": ">=0.6.8",
+        "log4js": ">=0.6.26",
         "noble": ">=1.1.0",
         "lodash": ">=3.10.1",
         "express": ">=4.13.3"

@@ -7,9 +7,9 @@ var _ = require('lodash');
 
 log4js.configure(__dirname + '/log4js_config.json');
 
-var log = log4js.getlog('WoT');
+var log = log4js.getLogger('WoT');
 var app,
-        sensors = {};
+    sensors = {};
 
 var RECOMMENDED_INTERVAL = 60 * 1000,
         MAX_VALUES_LENGTH = 100;
@@ -120,6 +120,47 @@ function setActurator(url, command, options) {
     var actuator = sensorDriver.createSensor(url);
 
     log.info('Set actuator - ', url, command, options);
+
+    actuator.set(command, options, function (error, result) {
+        if (_.isObject(options) && options.duration) {
+            setTimeout(function () {
+                log.info('Acturator clearing after ', options.duration);
+                actuator.clear();
+                actuator = null;
+            }, options.duration);
+        } else {
+            log.info('Acturator clearing now.');
+            actuator.clear();
+            actuator = null;
+        }
+    });
+}
+
+function setActurators(network, model, commands, options) {
+    if (!network || !model || !commands) {
+        throw new Error('Network, sensor model and commands can not be null.');
+    }
+
+    _.forEach(commands, function (command) {
+        var url = 'sensorjs:///' + network + '/' + command.pin + '/' + model + '/' + model + '-' + command.pin;
+        var actuator = sensorDriver.createSensor(url);
+
+        log.info('Set actuator - ', url, command.command, options);
+
+        actuator.set(command.command, options, function (error, result) {
+            if (_.isObject(options) && options.duration) {
+                setTimeout(function () {
+                    log.info('Acturator clearing after ', options.duration);
+                    actuator.clear();
+                    actuator = null;
+                }, options.duration);
+            } else {
+                log.info('Acturator clearing now.');
+                actuator.clear();
+                actuator = null;
+            }
+        });
+    });
 }
 
 exports.sensors = sensors;
@@ -128,3 +169,4 @@ exports.init = init;
 exports.createSensor = createSensor;
 exports.discoverSensors = discoverSensors;
 exports.setActurator = setActurator;
+exports.setActurators = setActurators;
