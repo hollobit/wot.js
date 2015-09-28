@@ -1,6 +1,6 @@
 {
     "levels": {
-        "WoT": "INFO"
+        "WoT": "DEBUG"
     },
     "replaceConsole": true,
     "appenders": [
