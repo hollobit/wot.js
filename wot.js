@@ -11,8 +11,8 @@ var log = log4js.getLogger('WoT');
 var app,
     sensors = {};
 
-var RECOMMENDED_INTERVAL = 60 * 1000,
-        MAX_VALUES_LENGTH = 100;
+var RECOMMENDED_INTERVAL = 1000,
+        MAX_VALUES_LENGTH = 10;
 
 /**
  * Initialize WoT.js
@@ -91,7 +91,8 @@ function createSensor(sensorUrl, cb) {
             time: null,
             type: null,
             message: null,
-            interval: sensorProperties && sensorProperties.recommendedInterval || RECOMMENDED_INTERVAL
+            interval: RECOMMENDED_INTERVAL || sensorProperties && sensorProperties.recommendedInterval
+            // interval: sensorProperties && sensorProperties.recommendedInterval || RECOMMENDED_INTERVAL
         };
 
         app.listen(sensor);
@@ -161,6 +162,8 @@ function setActurators(network, model, commands, options) {
             }
         });
     });
+
+    return true;
 }
 
 exports.sensors = sensors;
