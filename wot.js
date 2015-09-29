@@ -9,7 +9,8 @@ log4js.configure(__dirname + '/log4js_config.json');
 
 var log = log4js.getLogger('WoT');
 var app,
-    sensors = {};
+    sensors = {},
+    sensorList = [];
 
 var RECOMMENDED_INTERVAL = 1000,
         MAX_VALUES_LENGTH = 10;
@@ -97,6 +98,9 @@ function createSensor(sensorUrl, cb) {
 
         app.listen(sensor);
 
+        // sensorList.push(sensor);
+        sensorList[sensorId] = sensor;
+
         log.info('[wot/createSensor] sensor is created', sensorId, sensors);
 
         return cb && cb(null, sensor);
@@ -166,10 +170,28 @@ function setActurators(network, model, commands, options) {
     return true;
 }
 
+function getSensorValue(id, callback) {
+    if (!id) {
+        throw new Error('ID required!');
+    }
+
+    if (!sensors[id]) {
+        throw new Error('[' + id + '] does not exist!');
+    }
+
+    if (!callback) {
+        throw new Error('Callback required!');
+    }
+
+    this.sensorList[id].getValue(null, callback);
+}
+
 exports.sensors = sensors;
+exports.sensorList = sensorList;
 
 exports.init = init;
 exports.createSensor = createSensor;
 exports.discoverSensors = discoverSensors;
 exports.setActurator = setActurator;
 exports.setActurators = setActurators;
+exports.getSensorValue = getSensorValue;
