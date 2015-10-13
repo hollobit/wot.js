@@ -1,7 +1,6 @@
 'use strict';
 
-// var connect = require('sensorjs');
-var connect = require('../sensorjs/index');
+var connect = require('sensorjs');
 var sensorDriver = connect.sensor;
 var log4js = require('log4js');
 var _ = require('lodash');
