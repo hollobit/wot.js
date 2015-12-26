@@ -1,13 +1,13 @@
 'use strict';
 
-// var connect = require('sensorjs');
+var connect = require('./sensorjs/index');
 /**
  * Sensor.js init
  *
  * @type {*|exports|module.exports}
  * @global
  */
-var connect = require('../sensorjs/index');
+//var connect = require('../sensorjs/index');
 
 /**
  * Sensor driver instance
