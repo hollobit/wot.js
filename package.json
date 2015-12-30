@@ -1,0 +1,38 @@
+{
+    "name": "wotjs",
+    "description": "Web of Things based on node.js",
+    "version": "0.0.1",
+    "author": {
+        "name": "ETRI",
+        "email": "hollobit@etri.re.kr"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:nage-son/etri-wotjs-enhanced.git"
+    },
+    "scripts": {
+        "test": "mocha --reporter spec --bail"
+    },
+    "engine": {
+        "node": "0.12.x"
+    },
+    "os": ["linux"],
+    "cpu": ["arm", "ia32"],
+    "dependencies": {
+        "sensorjs": "git+https://github.com/nage-son/sensorjs.git",
+        "log4js": ">=0.6.26",
+        "noble": ">=1.1.0",
+        "lodash": ">=3.10.1",
+        "express": ">=4.13.3",
+        "request": ">=2.61.0",
+        "ip": "1.0.1",
+        "moment": "2.10.6"
+    },
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "https://github.com/nage-son/etri-wotjs-enhanced/blob/master/LICENSE.md"
+        }
+    ],
+    "keywords": ["IoT", "WoT"]
+}

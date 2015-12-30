@@ -1,0 +1,11 @@
+{
+    "levels": {
+        "WoT": "DEBUG"
+    },
+    "replaceConsole": true,
+    "appenders": [
+        {
+            "type": "console"
+        }
+    ]
+}

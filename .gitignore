@@ -1,0 +1,7 @@
+sftp-config.json
+sftp-config-alt.json
+.DS_Store
+.git*
+config.codekit
+out
+node_modules

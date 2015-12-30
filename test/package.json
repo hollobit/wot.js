@@ -1,0 +1,9 @@
+{
+    "name": "wot-test",
+    "version": "0.0.1",
+    "dependencies": {
+        "mocha": "2.3.4",
+        "karma-mocha": "0.2.1",
+        "should": "7.1.1"
+    }
+}
