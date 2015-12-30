@@ -17,6 +17,7 @@ This project is "wot.js" Web of Things Application Framework
 * [Resin.io](https://resin.io/) 
 
 ## Useful links
+* [Node.js and Embedded devices http://embeddednodejs.com/chapters.html]
 * [The Web of Things Initiative](http://www.w3.org/WoT/)
 * [The Web of Things IG homepage](http://www.w3.org/WoT/IG/)
 * [The Web of Things IG Wiki](http://www.w3.org/WoT/IG/wiki/Main_Page) 
