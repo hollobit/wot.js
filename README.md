@@ -44,4 +44,6 @@ This project is "wot.js" Web of Things Application Framework
 
 For the first version, we aim to standardize the following: 
 
-[TBD]
+* 0.1 : Initial internal version (Oct 2014) 
+* 0.2 : First demo version (Mar 2015) 
+* 0.5 : First public build version (Dec 2015)
