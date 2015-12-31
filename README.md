@@ -5,7 +5,8 @@ This project is "wot.js" Web of Things Application Framework
 
 ## Similar frameworks base on node.js 
 * [JavaScript and the Internet of Things](http://postscapes.com/javascript-and-the-internet-of-things)
-* [JavaScript framework for robotics, physical computing, and the Internet of Things using Node.js](http://cylonjs.com/)
+* [Cylonjs - JavaScript framework for robotics, physical computing, and the Internet of Things using Node.js](http://cylonjs.com/)
+* [Semantic Linked WoT](https://github.com/w3c/web-of-things-framework)
 * [The ThingBox Project](http://thethingbox.io/) 
 * [Octoblu](http://developer.octoblu.com/) 
 * [Intel® XDK IoT Edition ](https://software.intel.com/en-us/node/531745)
@@ -18,6 +19,7 @@ This project is "wot.js" Web of Things Application Framework
 
 ## Useful links
 * [Node.js for Embedded Systems](http://embeddednodejs.com/chapters.html)
+* [W3C WoT IG's PlugFest](https://github.com/w3c/wot/tree/master/plugfest)
 * [The Web of Things Initiative](http://www.w3.org/WoT/)
 * [The Web of Things IG homepage](http://www.w3.org/WoT/IG/)
 * [The Web of Things IG Wiki](http://www.w3.org/WoT/IG/wiki/Main_Page) 
