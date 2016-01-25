@@ -12,7 +12,11 @@ This project is "wot.js" Web of Things Application Framework
 
 ## Architecture of WoT.js 
 
+![architecture](https://raw.githubusercontent.com/hollobit/wot.js/master/images/wotjs-arch.png)
+
 ## General application model  
+
+![application model](https://raw.githubusercontent.com/hollobit/wot.js/master/images/wotjs-model.png)
 
 ## Applications 
 
