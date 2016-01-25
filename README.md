@@ -3,6 +3,21 @@ wot.js
 
 This project is "wot.js" Web of Things Application Framework
 
+## What is WoT.js framework
+
+* WoT.js is an open source Javascript framework for WoT(Web of Things) applications on OSHW(Open Soure Hardware) using Node.js
+* It provides a simple, yet powerful way to create WoT application that incorporate multiple, different hardware devices at the same time. 
+* It provides the RESTful architecture based sensor/actuator access interfaces and integrate with various IoT/WoT protocols(HTTP, MQTT, CoAP, WebSocket) easily. 
+* You can get the tons of benefits from node.js application environment – easy & fast  development, using many kinds of JS libraries and Web technologies.  
+
+## Architecture of WoT.js 
+
+## General application model  
+
+## Applications 
+
+* OSHW based IoT/WoT applications(smart home, healthcare, smart industry, smart agriculture, wearable …) development and prototyping
+
 ## Similar frameworks base on node.js 
 * [JavaScript and the Internet of Things](http://postscapes.com/javascript-and-the-internet-of-things)
 * [Cylonjs - JavaScript framework for robotics, physical computing, and the Internet of Things using Node.js](http://cylonjs.com/)
